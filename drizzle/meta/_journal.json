@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1793859771560,
+      "tag": "0000_opposite_shriek",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1793863352237,
+      "tag": "0001_flowery_mephistopheles",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1793865717647,
+      "tag": "0002_harsh_magdalene",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1793964168038,
+      "tag": "0003_adorable_morbius",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1793967681603,
+      "tag": "0004_friendly_tony_stark",
+      "breakpoints": true
+    }
+  ]
+}

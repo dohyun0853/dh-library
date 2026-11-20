@@ -1,0 +1,1 @@
+ALTER TABLE `courses` ADD `note` text DEFAULT '' NOT NULL;

@@ -1,0 +1,22 @@
+const errors:Record<string,string>={
+ '로그인이 필요합니다.':'Please sign in.',
+ '관리자의 이용 승인이 필요합니다.':'Administrator approval is required.',
+ '관리자만 사용할 수 있습니다.':'Only the administrator can do this.',
+ '자료가 없습니다.':'This material is not available.',
+ '파일을 찾을 수 없습니다.':'File not found.',
+ '0MB 초과, 25MB 이하의 파일을 선택해주세요.':'Choose a non-empty file of up to 25 MB.',
+ '파일은 25MB까지 업로드할 수 있습니다.':'Files can be up to 25 MB each.',
+ '자료 정보를 확인해주세요.':'Please check the material details.',
+ '과목을 먼저 추가해주세요.':'Add a course first.',
+ '같은 이름의 폴더가 있습니다.':'A folder with this name already exists.',
+ '이미 등록된 과목입니다.':'This course already exists.',
+ '이름과 학과·학번을 입력해주세요.':'Enter your name and department or student ID.',
+ '메시지를 입력해주세요.':'Write a message.',
+ '잠시 후 다시 보내주세요.':'Please wait a moment before sending another message.',
+ '사진은 최대 3장까지 첨부할 수 있습니다.':'You can attach up to 3 photos.',
+ '사진은 한 장당 5MB 이하로 첨부해주세요.':'Each photo must be 5 MB or smaller.',
+ 'JPG·PNG·WebP 사진만 첨부할 수 있습니다.':'Choose a JPG, PNG, or WebP photo.',
+ '이 기기에서 먼저 알림을 켜주세요.':'Enable notifications on this device first.',
+ '알림 수신 동의가 필요합니다.':'Your consent is required to receive notifications.',
+};
+export function displayError(message:string|undefined,fallback='Something went wrong. Please try again.'){if(!message)return fallback;const code=message.match(/\(P0[1-5]\)/)?.[0];return errors[message]||(/[가-힣]/.test(message)?(code?`Notification delivery failed ${code}. Please try again or repair the connection.`:fallback):message);}
